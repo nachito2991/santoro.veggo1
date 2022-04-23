@@ -7,323 +7,45 @@ box-sizing: border-box;
 a{ text-decoration: none;
     color: black;}
     
-/*************************************grid*******************************************/
-    .grid-contenedor{
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto auto 250;
-        grid-template-areas: 
-                    "nav nav"
-                    "header header"
-                    "main main"
-                    "footer footer";
-    }
-
-/************************************index*******************************************/
-
-header{
-    grid-area: header ;
-    background-image: url(../assets.css/bannerhelados.png);
-    height: 600px;
-    justify-content: center;
-    background-size: cover;
-    
-}
-
-
-     header img {
-         width:100%;
-         height: 300px;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         text-align: center;
-         
-     }
-
-    h1{
-        font-size: 65px;
-        font-family: 'Oswald', sans-serif;
-        color: rgb(0, 0, 0);
-       text-align: center;
-      padding: 5px;
-      
-    }
-    
-    h2 {
-        font-family: 'Oswald', sans-serif;
-        font-size: 50%;
-        color:rgb(236, 131, 131);
-        font-size: large;
-        text-align: center;
-    
+    ***********************************************CSS SIN BOOST**************************************************************
+    /*************************************grid*******************************************/
+        .grid-contenedor{
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto auto 250;
+            grid-template-areas: 
+                        "nav nav"
+                        "header header"
+                        "main main"
+                        "footer footer";
         }
     
+    /************************************index*******************************************/
     
-/*********body********/
-body{
-    
-    width: 100%;
-    background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(222,196,176,1) 100%);
-}
-
-
-/**********NAV***********/
-
-.menu-navegable{
-    grid-area: nav ;
-    list-style:none;
-    background-color: #7ed9cb;
-    width: 100%;
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
-    position: sticky;
-    top: 0;
-    -webkit-box-shadow: 0px 16px 21px -1px rgba(0,0,0,0.38);
-    -moz-box-shadow: 0px 16px 21px -1px rgba(0,0,0,0.38);
-    box-shadow: 0px 16px 21px -1px rgba(0,0,0,0.38);
-    
-    }
-
-.menu-navegable div  {
-    list-style: none;
-    font-family: 'Oswald', sans-serif;
-    display: inline-block;
-    font-size: 18px;
-    padding: 100px;
-    align-content: center;
-    text-align: center;
-    }
-
-ul li a {
-    background-color: #7ed9cb;
-    width: 100%;
-    }
-
-ul li a:hover {
-    background-color: aquamarine;
-    border-style: solid; color: black;
-    }
-
-
-/*************CONTENEDOR DE PRODUCTOS************************/
-
-.contenedor-tarjetas{
-    grid-area: main ;
-    width: 500px;
-    height: 500px;
-    background-color:rgb(236, 131, 131);
-    border-radius: 10px;
-    padding-left: 10px;
-    margin: 20px;
-    justify-content: center;
-    align-content: center;
-    -webkit-box-shadow: 0px -1px 45px -1px rgba(0,3,2,1);
-    -moz-box-shadow: 0px -1px 45px -1px rgba(0,3,2,1);
-    box-shadow: 0px -1px 45px -1px rgba(0,3,2,1);
-}
-
-.producto-imagen{
-    width: 90%;
-    height: 350px;
-    padding: 25px;
-}
-
-
-
-
-
-.Contenedor-productos {
-    display: flex;
-    font-family: 'Oswald', sans-serif;
-    font-size: 22px;
-    text-align: center;
-    margin-left: 230px;
-    
-    
-}
-
-/***************footer***************/
-footer{
- grid-area: footer ;
-    width: 100%;
-    height: 60px;
-    background-color: bisque;
-    color: black;
-}
-
-.redes{
-    grid-area: footer;
-    list-style:none;
-    background-color: #7ed9cb;
-    width: 100%;
-    height: 60px;
-    display: flex;
-    justify-content:center;
-    align-items:center;
-    margin:0
-
-
-
-    }
-
-    .redes div {
-        list-style: none;
-        font-family: 'Oswald', sans-serif;
-        display: inline-block;
-        font-size: 22px;
-        padding: 5px;
-        align-content: center;
-        text-align: center;
-        align-items: center;
-        }
-    
-.redes img {
-    width: 50px;
-  align-items: center;
-}
-
-
-
-.copy-right {
-    font-family: 'Oswald', sans-serif;
-    background-color: rgb(173, 225, 207);
-    text-align: center;
-    align-content: center;
-    justify-content: center;
-    padding: 10px;
-    height: 50px;
-  }
-
-
- 
-
-  /*************************************producto************************************/
-  p{
-      padding-top: 15px;
-  }
-
-   video {
-      margin-left: 25%;
-      margin-top: 35px;
-  }
-
-  .vuelve-menu {
-
-    align-items: center;
-    justify-content: center;
-    font-size: 25pX;
-    padding-left: 650px;
-
-  }
-
-  .descripcion-producto{
-    font-family: 'Oswald', sans-serif;
-    font-size: 20px;
-    text-align:center;
-  }
-
-/*******************FORMULARIO********************/
-.formulario-hijo {
-height: max-content;
-width: 400px;
-margin-left: 5%;
-padding: 15px;
-background-color: rgb(255, 127, 163);
--webkit-box-shadow: 0px 16px 21px -1px rgba(0,0,0,0.38);
--moz-box-shadow: 0px 16px 21px -1px rgba(0,0,0,0.38);
-box-shadow: 0px 16px 21px -1px rgba(0,0,0,0.38);
-border: solid  1px;
-}
-
-input{
-    padding: 10px;
-    margin:10px;
-    width: 50%;
-    height: 25px;
-    font-family: 'Oswald', sans-serif;
-    align-items: flex-end;
-}
-
-textarea {
-    height: 250px;
-    width: 350px;
-
-    
-}
-
-label {
-    font-family: 'Oswald', sans-serif; ;
-}
-/********************************venta mayorista**********************/
-
-.formulario-hijo {
-    grid-area: main ;
-    width: 500px;
-    height: 500px;
-    background-color:rgb(236, 131, 131);
-    border-radius: 10px;
-    padding-left: 10px;
-    margin: 20px;
-    justify-content: center;
-    align-content: center;
-    -webkit-box-shadow: 0px -1px 45px -1px rgba(0,3,2,1);
-    -moz-box-shadow: 0px -1px 45px -1px rgba(0,3,2,1);
-    box-shadow: 0px -1px 45px -1px rgba(0,3,2,1);
-}
-
-
-
-
-.venta-mayorista  a {
-    font-family: 'Oswald', sans-serif;
-    font-size: 20px;
-    text-align:center;
-    margin-left: 39%;
-   
-
-}
-
-/******************************RESPONSIVE**********************************/
-@media (max-width: 600px)  {
-    
-    *{box-sizing: border-box;}
-
-    .grid-contenedor{
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto auto 250;
-        grid-template-areas: 
-                    "header"
-                    "nav "
-                    "main "
-                    "footer";
-
-    }
-
     header{
         grid-area: header ;
         background-image: url(../assets.css/bannerhelados.png);
-        height: 150px;
+        height: 600px;
         justify-content: center;
         background-size: cover;
-        }
-
-        header img {
-            width:100%;
-            height:100px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-
+        
+    }
+    
+    
+         header img {
+             width:100%;
+             height: 300px;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             text-align: center;
+             
+         }
+    
         h1{
-            font-size: 25px;
+            font-size: 65px;
             font-family: 'Oswald', sans-serif;
-            color: black;
+            color: rgb(0, 0, 0);
            text-align: center;
           padding: 5px;
           
@@ -331,88 +53,367 @@ label {
         
         h2 {
             font-family: 'Oswald', sans-serif;
-            font-size: 15px;
+            font-size: 50%;
             color:rgb(236, 131, 131);
             font-size: large;
             text-align: center;
         
             }
-
-    .menu-navegable{
         
+        
+    /*********body********/
+    body{
         
         width: 100%;
-        height: 500px;
-        display: flex;
-       flex-direction: column;
-        justify-content: center;
-        position: static;
-        top: 0;
+        background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(222,196,176,1) 100%);
     }
-
-
-        .menu-navegable div  {
+    
+    
+    /**********NAV***********/
+    
+    .menu-navegable{
+        grid-area: nav ;
+        list-style:none;
+        background-color: #7ed9cb;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        position: sticky;
+        top: 0;
+        -webkit-box-shadow: 0px 16px 21px -1px rgba(0,0,0,0.38);
+        -moz-box-shadow: 0px 16px 21px -1px rgba(0,0,0,0.38);
+        box-shadow: 0px 16px 21px -1px rgba(0,0,0,0.38);
+        
+        }
+    
+    .menu-navegable div  {
+        list-style: none;
+        font-family: 'Oswald', sans-serif;
+        display: inline-block;
+        font-size: 18px;
+        padding: 100px;
+        align-content: center;
+        text-align: center;
+        }
+    
+    ul li a {
+        background-color: #7ed9cb;
+        width: 100%;
+        }
+    
+    ul li a:hover {
+        background-color: aquamarine;
+        border-style: solid; color: black;
+        }
+    
+    
+    /*************CONTENEDOR DE PRODUCTOS************************/
+    
+    .contenedor-tarjetas{
+        grid-area: main ;
+        width: 500px;
+        height: 500px;
+        background-color:rgb(236, 131, 131);
+        border-radius: 10px;
+        padding-left: 10px;
+        margin: 20px;
+        justify-content: center;
+        align-content: center;
+        -webkit-box-shadow: 0px -1px 45px -1px rgba(0,3,2,1);
+        -moz-box-shadow: 0px -1px 45px -1px rgba(0,3,2,1);
+        box-shadow: 0px -1px 45px -1px rgba(0,3,2,1);
+    }
+    
+    .producto-imagen{
+        width: 90%;
+        height: 350px;
+        padding: 25px;
+    }
+    
+    
+    
+    
+    
+    .Contenedor-productos {
+        display: flex;
+        font-family: 'Oswald', sans-serif;
+        font-size: 22px;
+        text-align: center;
+        margin-left: 230px;
+        
+        
+    }
+    
+    /***************footer***************/
+    footer{
+     grid-area: footer ;
+        width: 100%;
+        height: 60px;
+        background-color: bisque;
+        color: black;
+    }
+    
+    .redes{
+        grid-area: footer;
+        list-style:none;
+        background-color: #7ed9cb;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        margin:0
+    
+    
+    
+        }
+    
+        .redes div {
             list-style: none;
             font-family: 'Oswald', sans-serif;
-            display: block;
-            font-size: 20px;
-            padding: 20px;
-            margin-top: 0px;
-            -webkit-box-shadow: 0px 16px 21px -1px rgba(0,0,0,0.38);
-            -moz-box-shadow: 0px 16px 21px -1px rgba(0,0,0,0.38);
-            box-shadow: 0px 16px 21px -1px rgba(0,0,0,0.38);
+            display: inline-block;
+            font-size: 22px;
+            padding: 5px;
+            align-content: center;
+            text-align: center;
+            align-items: center;
             }
-
-  
-                .contenedor-tarjetas{
-              display: none;}
-
         
-              .redes div {
+    .redes img {
+        width: 50px;
+      align-items: center;
+    }
+    
+    
+    
+    .copy-right {
+        font-family: 'Oswald', sans-serif;
+        background-color: rgb(173, 225, 207);
+        text-align: center;
+        align-content: center;
+        justify-content: center;
+        padding: 10px;
+        height: 50px;
+      }
+    
+    
+     
+    
+      /*************************************producto************************************/
+      p{
+          padding-top: 15px;
+      }
+    
+       video {
+          margin-left: 25%;
+          margin-top: 35px;
+      }
+    
+      .vuelve-menu {
+    
+        align-items: center;
+        justify-content: center;
+        font-size: 25pX;
+        padding-left: 650px;
+    
+      }
+    
+      .descripcion-producto{
+        font-family: 'Oswald', sans-serif;
+        font-size: 20px;
+        text-align:center;
+      }
+    
+    /*******************FORMULARIO********************/
+    .formulario-hijo {
+    height: max-content;
+    width: 400px;
+    margin-left: 5%;
+    padding: 15px;
+    background-color: rgb(255, 127, 163);
+    -webkit-box-shadow: 0px 16px 21px -1px rgba(0,0,0,0.38);
+    -moz-box-shadow: 0px 16px 21px -1px rgba(0,0,0,0.38);
+    box-shadow: 0px 16px 21px -1px rgba(0,0,0,0.38);
+    border: solid  1px;
+    }
+    
+    input{
+        padding: 10px;
+        margin:10px;
+        width: 50%;
+        height: 25px;
+        font-family: 'Oswald', sans-serif;
+        align-items: flex-end;
+    }
+    
+    textarea {
+        height: 250px;
+        width: 350px;
+    
+        
+    }
+    
+    label {
+        font-family: 'Oswald', sans-serif; ;
+    }
+    /********************************venta mayorista**********************/
+    
+    .formulario-hijo {
+        grid-area: main ;
+        width: 500px;
+        height: 500px;
+        background-color:rgb(236, 131, 131);
+        border-radius: 10px;
+        padding-left: 10px;
+        margin: 20px;
+        justify-content: center;
+        align-content: center;
+        -webkit-box-shadow: 0px -1px 45px -1px rgba(0,3,2,1);
+        -moz-box-shadow: 0px -1px 45px -1px rgba(0,3,2,1);
+        box-shadow: 0px -1px 45px -1px rgba(0,3,2,1);
+    }
+    
+    
+    
+    
+    .venta-mayorista  a {
+        font-family: 'Oswald', sans-serif;
+        font-size: 20px;
+        text-align:center;
+        margin-left: 39%;
+       
+    
+    }
+    
+    /******************************RESPONSIVE**********************************/
+    @media (max-width: 600px)  {
+        
+        *{box-sizing: border-box;}
+    
+        .grid-contenedor{
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto auto 250;
+            grid-template-areas: 
+                        "header"
+                        "nav "
+                        "main "
+                        "footer";
+    
+        }
+    
+        header{
+            grid-area: header ;
+            background-image: url(../assets.css/bannerhelados.png);
+            height: 150px;
+            justify-content: center;
+            background-size: cover;
+            }
+    
+            header img {
+                width:100%;
+                height:100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+    
+            h1{
+                font-size: 25px;
+                font-family: 'Oswald', sans-serif;
+                color: black;
+               text-align: center;
+              padding: 5px;
+              
+            }
+            
+            h2 {
+                font-family: 'Oswald', sans-serif;
+                font-size: 15px;
+                color:rgb(236, 131, 131);
+                font-size: large;
+                text-align: center;
+            
+                }
+    
+        .menu-navegable{
+            
+            
+            width: 100%;
+            height: 500px;
+            display: flex;
+           flex-direction: column;
+            justify-content: center;
+            position: static;
+            top: 0;
+        }
+    
+    
+            .menu-navegable div  {
                 list-style: none;
                 font-family: 'Oswald', sans-serif;
-                display: inline-block;
+                display: block;
                 font-size: 20px;
-                padding: 5px;
-                align-content: center;
-                text-align: center;
-                align-items: center;
+                padding: 20px;
+                margin-top: 0px;
+                -webkit-box-shadow: 0px 16px 21px -1px rgba(0,0,0,0.38);
+                -moz-box-shadow: 0px 16px 21px -1px rgba(0,0,0,0.38);
+                box-shadow: 0px 16px 21px -1px rgba(0,0,0,0.38);
                 }
-                .redes img {
-                    width: 25px;
-                  align-items: center;
-                }
-
-        p {
-            font-size: 10px;
-        }
-
-
-        .formulario-hijo {
-            grid-area: main ;
-            width: 250px;
-            height: 250px;
-            background-color:rgb(236, 131, 131);
-            border-radius: 10px;
-            padding-left: 5px;
-           justify-content: space-around;
-           
-        }
-
-        textarea {
-            height: 50px;
-            width: 210px;
-        }
-        .volver-menu {
-        display: none;
-        }
-
-        .copy-right {
-            font-family: 'Oswald', sans-serif;
-            background-color: rgb(173, 225, 207);
-            padding: 10px;
-            height: 60px;
-            margin-bottom: 10px;
-        }
-        
-}
+    
+      
+                    .contenedor-tarjetas{
+                  display: none;}
+    
+            
+                  .redes div {
+                    list-style: none;
+                    font-family: 'Oswald', sans-serif;
+                    display: inline-block;
+                    font-size: 20px;
+                    padding: 5px;
+                    align-content: center;
+                    text-align: center;
+                    align-items: center;
+                    }
+                    .redes img {
+                        width: 25px;
+                      align-items: center;
+                    }
+    
+            p {
+                font-size: 10px;
+            }
+    
+    
+            .formulario-hijo {
+                grid-area: main ;
+                width: 250px;
+                height: 250px;
+                background-color:rgb(236, 131, 131);
+                border-radius: 10px;
+                padding-left: 5px;
+               justify-content: space-around;
+               
+            }
+    
+            textarea {
+                height: 50px;
+                width: 210px;
+            }
+            .volver-menu {
+            display: none;
+            }
+    
+            .copy-right {
+                font-family: 'Oswald', sans-serif;
+                background-color: rgb(173, 225, 207);
+                padding: 10px;
+                height: 60px;
+                margin-bottom: 10px;
+            }
+            
+    }
