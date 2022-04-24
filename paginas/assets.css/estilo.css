@@ -291,3 +291,124 @@ h5 {
     font-size: 65px;
 
 }
+
+/*******************responsive**************/
+@media (max-width: 600px)  {
+    
+
+
+    
+
+    header{
+        background-image: url(../assets.css/bannerhelados.png);
+        height: 150px;
+        justify-content: center;
+        background-size: cover;
+        }
+
+        header img {
+            width:100%;
+            height:100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        h1{
+            font-size: 25px;
+            font-family: 'Oswald', sans-serif;
+            color: black;
+           text-align: center;
+          padding: 5px;
+          
+        }
+        
+        h2 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 15px;
+            color:rgb(236, 131, 131);
+            font-size: large;
+            text-align: center;
+        
+            }
+
+    .menu-navegable{
+        
+        
+        width: 100%;
+        height: 500px;
+        display: flex;
+       flex-direction: column;
+        justify-content: center;
+        position: static;
+        top: 0;
+    }
+
+
+        .menu-navegable div  {
+            list-style: none;
+            font-family: 'Oswald', sans-serif;
+            display: block;
+            font-size: 20px;
+            padding: 20px;
+            margin-top: 0px;
+            -webkit-box-shadow: 0px 16px 21px -1px rgba(0,0,0,0.38);
+            -moz-box-shadow: 0px 16px 21px -1px rgba(0,0,0,0.38);
+            box-shadow: 0px 16px 21px -1px rgba(0,0,0,0.38);
+            }
+
+  
+                .contenedor-tarjetas{
+              display: none;}
+
+        
+              .redes div {
+                list-style: none;
+                font-family: 'Oswald', sans-serif;
+                display: inline-block;
+                font-size: 20px;
+                padding: 5px;
+                align-content: center;
+                text-align: center;
+                align-items: center;
+                }
+                .redes img {
+                    width: 25px;
+                  align-items: center;
+                }
+
+        p {
+            font-size: 10px;
+            display: flex;
+        }
+
+
+        .formulario-hijo {
+            grid-area: main ;
+            width: 250px;
+            height: 250px;
+            background-color:rgb(236, 131, 131);
+            border-radius: 10px;
+            padding-left: 5px;
+           justify-content: space-around;
+           
+        }
+
+        textarea {
+            height: 50px;
+            width: 210px;
+        }
+        .volver-menu {
+        display: none;
+        }
+
+        .copy-right {
+            font-family: 'Oswald', sans-serif;
+            background-color: rgb(173, 225, 207);
+            padding: 10px;
+            height: 60px;
+            margin-bottom: 10px;
+        }
+        
+}
