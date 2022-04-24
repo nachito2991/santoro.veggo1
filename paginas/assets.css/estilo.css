@@ -115,7 +115,6 @@ background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(222,196,176,1) 1
 /*************CONTENEDOR DE PRODUCTOS************************/
 
 .contenedor-tarjetas{
-grid-area: main ;
 width: 500px;
 height: 500px;
 background-color:rgb(236, 131, 131);
@@ -259,7 +258,6 @@ font-family: 'Oswald', sans-serif; ;
 /********************************venta mayorista**********************/
 
 .contenedor-formulario {
-grid-area: main ;
 width: 500px;
 height: 380px;
 background-color:rgb(236, 131, 131);
