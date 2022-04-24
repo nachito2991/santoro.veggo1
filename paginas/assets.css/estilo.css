@@ -144,7 +144,7 @@ display: flex;
 font-family: 'Oswald', sans-serif;
 font-size: 22px;
 text-align: center;
-margin-left: 230px;
+margin-left: 500px;
 
 
 }
@@ -210,7 +210,7 @@ p{
 }
 
 video {
-  margin-left: 25%;
+  margin-left: 35%;
   margin-top: 35px;
 }
 
@@ -249,22 +249,19 @@ font-family: 'Oswald', sans-serif;
 align-items: flex-end;
 }
 
-textarea {
-height: 250px;
-width: 350px;
 
 
-}
+
 
 label {
 font-family: 'Oswald', sans-serif; ;
 }
 /********************************venta mayorista**********************/
 
-.formulario-hijo {
+.contenedor-formulario {
 grid-area: main ;
 width: 500px;
-height: 500px;
+height: 380px;
 background-color:rgb(236, 131, 131);
 border-radius: 10px;
 padding-left: 10px;
@@ -288,4 +285,9 @@ margin-left: 39%;
 
 }
 
-/******************************RESPONSIVE**********************************/
+h5 {
+    color: bisque;
+    font-family: 'Oswald', sans-serif;
+    font-size: 65px;
+
+}
