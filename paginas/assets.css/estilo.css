@@ -1,7 +1,10 @@
 *{
     margin: 0;
-    padding: 0;
-box-sizing: border-box;
+    padding: 0; 
+    box-sizing: border-box;
+    font-family:'Oswald', sans-serif;
+    text-align: center;
+    font-size: ;
 }
 
 a{ text-decoration: none;
@@ -17,7 +20,6 @@ a{ text-decoration: none;
 /************************************index*******************************************/
 
 header{
-grid-area: header ;
 background-image: url(../assets.css/bannerhelados.png);
 height: 600px;
 justify-content: center;
@@ -28,16 +30,20 @@ background-size: cover;
 
  header img {
      width:100%;
-     height: 300px;
+     height: 100px;
      display: flex;
      justify-content: center;
      align-items: center;
      text-align: center;
-     
- }
+     }
+
+
+
+}    
+
 
 h1{
-    font-size: 65px;
+    font-size: 50px;
     font-family: 'Oswald', sans-serif;
     color: rgb(0, 0, 0);
     text-align: center;
@@ -65,22 +71,7 @@ background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(222,196,176,1) 1
 
 /**********NAV***********/
 
-.menu-navegable{
-    grid-area: nav ;
-    list-style:none;
-    background-color: #7ed9cb;
-    width: 100%;
-    height: 60px;
-    display: flex;
-    justify-content: space-around;
-    align-items:center;
-    position: sticky;
-    top: 0;
-    -webkit-box-shadow: 0px 16px 21px -1px rgba(0,0,0,0.38);
-    -moz-box-shadow: 0px 16px 21px -1px rgba(0,0,0,0.38);
-    box-shadow: 0px 16px 21px -1px rgba(0,0,0,0.38);
-    
-    }
+
     
     .menu-navegable div  {
         list-style: none;
@@ -105,38 +96,34 @@ background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(222,196,176,1) 1
 
 /*************CONTENEDOR DE PRODUCTOS************************/
 
-.contenedor-tarjetas{
-width: 500px;
-height: 500px;
-background-color:rgb(236, 131, 131);
-border-radius: 10px;
-padding-left: 10px;
-margin: 20px;
-justify-content: center;
-align-content: center;
--webkit-box-shadow: 0px -1px 45px -1px rgba(0,3,2,1);
--moz-box-shadow: 0px -1px 45px -1px rgba(0,3,2,1);
-box-shadow: 0px -1px 45px -1px rgba(0,3,2,1);
+    
 }
 
-.producto-imagen{
-width: 90%;
-height: 350px;
-padding: 25px;
+.card{
+    display: flex;
+    text-align: center;
+     position: relative;
 }
 
+.card .text-hover {
+    width: 0%;
+    background-color: rgba(0, 0, 0, 0.216);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s;
+    font-size: 35px;
+    color:#000000;
+    animation-direction:reverse;
+}
 
-
-
-
-.Contenedor-productos {
-display: flex;
-font-family: 'Oswald', sans-serif;
-font-size: 22px;
-text-align: center;
-margin-left: 500px;
-
-
+    
+.card:hover .text-hover{
+    width: 100%;
+    height: 76%;
+    
 }
 
 /***************footer***************/
@@ -146,6 +133,8 @@ width: 100%;
 height: 60px;
 background-color: bisque;
 color: black;
+background: rgb(2,0,36);
+background: linear-gradient(302deg, rgba(2,0,36,1) -26%, rgba(126,217,203,1) 8%);
 }
 
 .redes{
@@ -177,6 +166,7 @@ margin:0
 .redes img {
 width: 50px;
 align-items: center;
+text-align: center;
 }
 
 
@@ -316,8 +306,9 @@ h5 {
             font-size: 25px;
             font-family: 'Oswald', sans-serif;
             color: black;
-           text-align: center;
-          padding: 5px;
+            text-align: center;
+            padding: 5px;
+
           
         }
         
@@ -330,35 +321,12 @@ h5 {
         
             }
 
-    .menu-navegable{
-        
-        
-        width: 100%;
-        height: 500px;
-        display: flex;
-       flex-direction: column;
-        justify-content: center;
-        position: static;
-        top: 0;
-    }
 
 
-        .menu-navegable div  {
-            list-style: none;
-            font-family: 'Oswald', sans-serif;
-            display: block;
-            font-size: 20px;
-            padding: 20px;
-            margin-top: 0px;
-            -webkit-box-shadow: 0px 16px 21px -1px rgba(0,0,0,0.38);
-            -moz-box-shadow: 0px 16px 21px -1px rgba(0,0,0,0.38);
-            box-shadow: 0px 16px 21px -1px rgba(0,0,0,0.38);
-            }
+
 
   
-                .contenedor-tarjetas{
-              display: none;}
-
+             
         
               .redes div {
                 list-style: none;
