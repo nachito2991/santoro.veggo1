@@ -35,6 +35,16 @@ a {
   color: black;
 }
 
+.carousel-caption {
+  font-size: 50px;
+}
+
+.carousel-caption h5 {
+  font-size: 100px;
+  margin-bottom: 430px;
+  color: rgba(245, 10, 128, 0.575);
+}
+
 .navbar-brand {
   width: auto;
   font-size: 65px;
