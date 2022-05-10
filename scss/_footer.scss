@@ -1,0 +1,41 @@
+footer{
+    width: 100%;
+    height: 60px;
+    background-color: #7ed9cb;
+    color: black;
+    
+    .redes{
+    list-style:none;
+    background-color: #7ed9cb;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin:0
+     }
+    
+    .redes div {
+        list-style: none;
+        font-family: 'Oswald', sans-serif;
+        display: inline-block;
+        font-size: 22px;
+        padding: 5px;
+        align-content: center;
+        text-align: center;
+        align-items: center;
+        }
+    .redes img {
+    width: 50px;
+    align-items: center;
+    }
+    .copy-right {
+    font-family: 'Oswald', sans-serif;
+    background-color: rgb(173, 225, 207);
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    padding: 10px;
+    height: 50px;
+    }
+}

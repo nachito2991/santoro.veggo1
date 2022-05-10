@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,cAAc,CAAC;EAEX,UAAU,EAAE,OAAO;EACnB,UAAU,EAAE,8DAA8D;CAC3E;;AACD,AAAA,cAAc,CAAC,GAAG,CAAC;EACjB,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,aAAa,EAAE,IAAI;EACnB,OAAO,EAAE,IAAI;CACd",
+    "sources": [
+        "../../scss/imagenesInicio.scss"
+    ],
+    "names": [],
+    "file": "imagenesInicio.css"
+}

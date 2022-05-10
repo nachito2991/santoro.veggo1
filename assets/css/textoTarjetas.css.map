@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,WAAW,CAAC;EACR,SAAS,EAAE,IAAI;EACf,KAAK,EAAE,KACP;CAAC;;AACD,AAAA,UAAU,CAAC;EACX,SAAS,EAAE,IAAI;EAChB,WAAW,EAAE,oBAAoB;EACjC,KAAK,EAAE,KAAK;CACd",
+    "sources": [
+        "../../scss/textoTarjetas.scss"
+    ],
+    "names": [],
+    "file": "textoTarjetas.css"
+}
